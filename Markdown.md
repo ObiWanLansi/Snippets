@@ -6,6 +6,8 @@
 
 ***Fett und Durchgestrichen***
 
+Use `git status` to list all new or modified files that haven't yet been committed.
+
 # Header 1
 ## Header 2
 ### Header 3
