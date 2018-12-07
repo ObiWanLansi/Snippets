@@ -31,6 +31,7 @@ A Collection Of Different Code Snippets, Links And Stuff.
 - [Weather](https://openweathermap.org/)
 - [Eartquakes](https://www.emsc-csem.org/service/rss/rss.php?typ=emsc)
 - [Geo Data (OpenStreetMap)](http://download.geofabrik.de/)
+- [Das Datenportal für Deutschland](https://www.govdata.de/)
 
 
 ## Good, Interesting Or Free Tools For Developing, DataMinig And DataWarehouse
