@@ -42,4 +42,4 @@ A Collection Of Different Code Snippets, Links And Stuff.
 
 ---
 
-**I'm not finished yet, the rest is coming**
+**I'm not finished yet, the rest is coming ...**
