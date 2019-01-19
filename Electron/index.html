@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <style>
+        input
+        {
+            border: 2px solid skyblue;
+            border-radius: 8px;
+            width: 200px;
+            font-size: 18px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Firstname</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td>Lastname</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td>Haircolor</td>
+                <td><input type="color" name="haircolor"></td>
+            </tr>
+
+            <tr>
+                <td>DateOfBirth</td>
+                <td><input type="date" name="DateOfBirth"></td>
+            </tr>
+
+            <tr>
+                <td>email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: right;"><button type="button" onclick="alert('Hello World!')">Click Me!</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+    </script>
+</body>
+
+</html>
