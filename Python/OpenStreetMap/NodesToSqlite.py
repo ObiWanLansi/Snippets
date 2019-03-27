@@ -6,8 +6,8 @@ from xml.sax import make_parser, handler
 
 #######################################################################################################################
 
-osm_input_file = r"X:\OpenStreetMap\fiji-latest.osm"
-sqlite_output_file = r"X:\OpenStreetMap\fiji-latest.sqlite"
+osm_input_file = r"X:\OpenStreetMap\europe-latest.osm"
+sqlite_output_file = r"X:\OpenStreetMap\europe-latest.sqlite"
 
 #osm_input_file = "X:\OpenStreetMap\europe-latest.osm"
 #sqlite_output_file = "X:\OpenStreetMap\europe-latest.sqlite"
@@ -31,12 +31,15 @@ class NodeHandler(handler.ContentHandler):
         self.wanted = False
 
 
+    def xstoreNode(self):
+        pass
+
     def storeNode(self):
         #global db
         cursor = db.cursor()
         values = (self.id,self.lat,self.lon,self.name,self.tag,self.value)
         cursor.execute(sql,values)
-        db.commit()
+        #db.commit()
 
 
     def startElement(self, name, attrs):
@@ -82,8 +85,12 @@ if os.access(sqlite_output_file,os.F_OK):
     os.remove(sqlite_output_file)
 
 db = sqlite3.connect(sqlite_output_file)
+
 cursor = db.cursor()
+
 cursor.execute("""CREATE TABLE NODE (ID INTEGER NOT NULL PRIMARY KEY,LAT DOUBLE NOT NULL,LON DOUBLE NOT NULL, NAME TEXT, TAG TEXT NOT NULL,VALUE TEXT NOT NULL)""")
+
+cursor.execute("""begin transaction""");
 
 start = dt.datetime.now()
 
@@ -97,6 +104,8 @@ try:
     parser.parse(osm_input_file)
 except (BaseException) as e:
     pass
+
+cursor.execute("""commit""");
 
 print ("Nodes: {0}".format(nodecounter))
 
