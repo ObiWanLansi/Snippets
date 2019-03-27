@@ -68,7 +68,7 @@ class NodeHandler(handler.ContentHandler):
 
         if name == "way":
             # Soblad die Wege kommen sind die Nodes durch und wir können (auch wenn unschön) beenden ...
-            raise BaseException('')
+            raise BaseException('We need no ways ...')
 
 
     def endElement(self,name):
@@ -90,8 +90,6 @@ cursor = db.cursor()
 
 cursor.execute("""CREATE TABLE NODE (ID INTEGER NOT NULL PRIMARY KEY,LAT DOUBLE NOT NULL,LON DOUBLE NOT NULL, NAME TEXT, TAG TEXT NOT NULL,VALUE TEXT NOT NULL)""")
 
-cursor.execute("""begin transaction""");
-
 start = dt.datetime.now()
 
 nodecounter = 0
@@ -100,12 +98,18 @@ nh = NodeHandler()
 parser = make_parser()
 parser.setContentHandler(nh)
 
+#--------------------------------------
+
+cursor.execute("""begin transaction""");
+
 try:
     parser.parse(osm_input_file)
 except (BaseException) as e:
-    pass
+    print ("Exception: {0}".format(e.args[0]))
 
 cursor.execute("""commit""");
+
+#--------------------------------------
 
 print ("Nodes: {0}".format(nodecounter))
 
