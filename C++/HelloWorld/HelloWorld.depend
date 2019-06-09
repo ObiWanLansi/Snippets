@@ -1,0 +1,4 @@
+# depslib dependency file v1.0
+1560074502 source:/home/pi/Develop/GitHub/ObiWanLansi/Snippets/C++/HelloWorld/main.cpp
+	<iostream>
+
