@@ -114,4 +114,6 @@ timespan = stop - start
 
 print ("Time :",timespan)
 
+cursor.close()
+
 db.close()
