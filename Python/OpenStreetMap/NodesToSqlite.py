@@ -6,8 +6,8 @@ from xml.sax import make_parser, handler
 
 #######################################################################################################################
 
-osm_input_file = r"x:\OpenStreetMap\Europe\germany-latest.osm"
-sqlite_output_file = r"x:\OpenStreetMap\Europe\germany-latest.py.sqlite"
+osm_input_file = r"X:\OpenStreetMap\Germany\germany-latest.osm"
+sqlite_output_file = r"X:\OpenStreetMap\Germany\germany-latest.py.sqlite"
 
 #osm_input_file = "X:\OpenStreetMap\europe-latest.osm"
 #sqlite_output_file = "X:\OpenStreetMap\europe-latest.sqlite"
@@ -34,6 +34,7 @@ class NodeHandler(handler.ContentHandler):
     def storeNode(self):
         cursor = db.cursor()
         values = (self.id,self.lat,self.lon,self.name,self.tag,self.value)
+        print(values)
         cursor.execute(sql,values)
 
 
