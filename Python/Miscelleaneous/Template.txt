@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=%NAME%
-Comment=%COMMENT%
-Exec=%EXEC%
-Icon=/usr/share/qt4/doc/html/images/application.png
-Terminal=false
-Type=Application
-StartupNotify=false
-
