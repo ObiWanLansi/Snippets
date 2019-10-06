@@ -14,7 +14,7 @@ Require-Bundle: javax.inject;bundle-version="0.0.0",
  org.eclipse.e4.ui.di;bundle-version="0.0.0",
  org.eclipse.e4.core.contexts;bundle-version="0.0.0",
  org.eclipse.core.runtime;bundle-version="0.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-12
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Automatic-Module-Name: MyApplication
 Import-Package: javax.annotation;version="0.0.0"
 Bundle-ActivationPolicy: lazy
