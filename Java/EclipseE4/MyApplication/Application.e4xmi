@@ -2,7 +2,7 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="MyApplication.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="MyApplication.window.main" label="OwiWanLansiApplication" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_ZoT0kObWEemiquwoSS2-lw" elementId="myapplication.perspectivestack.0" accessibilityPhrase="" selectedElement="_em2yMObWEemiquwoSS2-lw">
-      <children xsi:type="advanced:Perspective" xmi:id="_em2yMObWEemiquwoSS2-lw" elementId="myapplication.perspective.default" label="Default">
+      <children xsi:type="advanced:Perspective" xmi:id="_em2yMObWEemiquwoSS2-lw" elementId="myapplication.perspective.default" selectedElement="_6wlLksgZEeSyMNYR5xypkQ" label="Default">
         <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="MyApplication.partsashcontainer.sample">
           <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="MyApplication.partstack.sample">
             <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="MyApplication.part.sample" contributionURI="bundleclass://MyApplication/myapplication.parts.SamplePart" label="Sample Part Second (Closeable)" iconURI="platform:/plugin/MyApplication/icons/home.png" closeable="true"/>
@@ -13,7 +13,7 @@
           </children>
         </children>
       </children>
-      <children xsi:type="advanced:Perspective" xmi:id="_U0fPQOeREemh-v44cF67VA" elementId="myapplication.perspective.optional" label="Optional">
+      <children xsi:type="advanced:Perspective" xmi:id="_U0fPQOeREemh-v44cF67VA" elementId="myapplication.perspective.optional" selectedElement="_cGRv8OeTEemh-v44cF67VA" label="Optional">
         <children xsi:type="basic:PartSashContainer" xmi:id="_cGRv8OeTEemh-v44cF67VA" elementId="myapplication.partsashcontainer.0">
           <children xsi:type="basic:PartStack" xmi:id="_kfQNEOeTEemh-v44cF67VA" elementId="myapplication.partstack.1">
             <children xsi:type="basic:Part" xmi:id="_WfexcOeREemh-v44cF67VA" elementId="MyApplication.part.sample" contributionURI="bundleclass://MyApplication/myapplication.parts.SamplePart" label="Sample Part Fourth" iconURI="platform:/plugin/MyApplication/icons/home.png"/>
