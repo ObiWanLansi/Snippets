@@ -28,6 +28,7 @@ A Collection Of Different Code Snippets, Links And Stuff.
 
 
 ## (Almost) Free Data Sources
+- [Kaggle Datasets](https://www.kaggle.com/datasets)
 - [Weather](https://openweathermap.org/)
 - [Eartquakes](https://www.emsc-csem.org/service/rss/rss.php?typ=emsc)
 - [Geo Data (OpenStreetMap)](http://download.geofabrik.de/)
