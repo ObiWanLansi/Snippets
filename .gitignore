@@ -12,3 +12,4 @@ bin/
 obj/
 Java/JavaFX/.classpath
 Java/JavaFX/.project
+*.prefs
