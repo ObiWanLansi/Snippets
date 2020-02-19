@@ -5,25 +5,34 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
-public class HelloWorld extends Application {
 
-	@Override
-	public void start(Stage primaryStage) {
-		Label label = new Label("Hello JavaFX World!");
 
-		StackPane root = new StackPane();
-		root.getChildren().add(label);
+/**
+ * The Class HelloWorld Is For ...
+ *
+ */
+public final class HelloWorld extends Application {
 
-		Scene scene = new Scene(root, 400, 300);
+    @Override
+    public void start( final Stage primaryStage ) {
 
-		primaryStage.setTitle("Hello JavaFX World!");
-		primaryStage.setScene(scene);
-		primaryStage.show();
-	}
+        final Label label = new Label("Hello JavaFX World!");
 
-	public static void main(String[] args) {
-		launch(args);
-	}
-	
-}
+        final StackPane root = new StackPane();
+        root.getChildren().add(label);
+
+        final Scene scene = new Scene(root, 400, 300);
+
+        primaryStage.setTitle("Hello JavaFX World!");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+
+    public static void main( final String[] args ) {
+
+        launch(args);
+    }
+
+} // end public final class HelloWorld
 
