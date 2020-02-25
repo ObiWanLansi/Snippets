@@ -5,7 +5,7 @@ A Collection Of Different Code Snippets, Links And Stuff.
 ## Helpful Links
 
 ### General Tutorial Collection Websites
-- [Tutorials Point](https://www.tutorialspoint.com)
+- [Tutorials Point](https://www.tutorialspoint.com/tutorialslibrary.htm)
 - [W3 Schools](https://www.w3schools.com)
 
 
