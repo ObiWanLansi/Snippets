@@ -1,0 +1,40 @@
+﻿@page "/einmaleins"
+
+<h1>Einmal Eins</h1>
+
+<table border="1">
+    <tr>
+        @for( int i = 0 ; i < 11 ; i++ )
+        {
+            <th style="text-align:right; background:#F0F0F0;">@i</th>
+        }
+    </tr>
+
+    @for( int iMultiplikator = 1 ; iMultiplikator < 11 ; iMultiplikator++ )
+    {
+        <tr>
+            <th style="text-align: right; background: #F0F0F0;">@iMultiplikator</th>
+
+            @for( int iMultiplikand = 1 ; iMultiplikand < 11 ; iMultiplikand++ )
+            {
+                <td style="text-align:right">@GetResult(@iMultiplikator, @iMultiplikand)</td>
+            }
+        </tr>
+    }
+
+</table>
+
+@code
+{
+    /// <summary>
+    /// Multiplikation zweiter Zahlen.
+    /// </summary>
+    /// <remarks>Eigentlich hätte ich das ja gerne oben inline gemacht ...</remarks>
+    /// <param name="iMultiplikator"></param>
+    /// <param name="iMultiplikand"></param>
+    /// <returns></returns>
+    private int GetResult( int iMultiplikator, int iMultiplikand )
+    {
+        return iMultiplikator * iMultiplikand;
+    }
+}
