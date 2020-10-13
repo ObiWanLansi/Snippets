@@ -1,5 +1,5 @@
 from flask import Flask
-app = Flask(__name__)
+app = Flask("HelloWorld")
 
 @app.route("/")
 def hello():
@@ -11,4 +11,4 @@ def data():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=(8421))
