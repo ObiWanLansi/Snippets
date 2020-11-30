@@ -7,10 +7,10 @@ public class ForElias {
         // Example Array With Some Values
         final int[] array = new int[] { 2, 3, 3, 3, 3, 4, 3, 3, 3, 5 };
 
-        // The Position Of The Value We Want To Change
+        // The Position Of The Value We Want To Change (The Second Value In The Array)
         final int iMasterPosition = 1;
 
-        // The Current Value At The MasterPosition
+        // The Current Value At The MasterPosition (Should Be 3)
         final int iValueAtMasterPos = array[iMasterPosition];
 
         // Nun das Array ab der MasterPosition durchlaufen und wenn der Wert dem Wert
