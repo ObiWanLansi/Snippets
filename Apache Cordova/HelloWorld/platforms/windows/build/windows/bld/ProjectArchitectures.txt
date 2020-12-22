@@ -1,1 +1,0 @@
-d:\EigeneDateien\Entwicklung.GitHub\Snippets\Apache Cordova\HelloWorld\platforms\windows\CordovaApp.Windows10.jsproj;neutral
