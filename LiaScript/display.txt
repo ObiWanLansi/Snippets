@@ -1,1 +1,1 @@
-https://liascript.github.io/course/?https://raw.githubusercontent.com/liaScript/docs/master/README.md#5
+https://liascript.github.io/course/?https://raw.githubusercontent.com/ObiWanLansi/Snippets/master/LiaScript/LoremIpsum.md
